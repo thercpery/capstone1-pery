@@ -1,0 +1,78 @@
+* {
+	font-family: "Montserrat Alternates", sans-serif;
+	font-size: 20px;
+
+}
+
+/* globals */
+
+#nav {
+	background-color: #00537B;
+	border-bottom: 5px solid #00537B;
+}
+
+.fab {
+	font-size: 1.25rem;
+	color: white;
+}
+
+footer {
+	background-color: #00537B;
+}
+
+
+#index-container, #projects-container, #tools-container, #contact-container {
+	width: 100%;
+}
+
+/*#index-container*/
+
+#index-container{
+	background-image: url(./img/index-bg.jpg);
+	min-height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+}
+
+#index-container #projects-button{
+	background-color: #00537B;
+}
+
+#index-container img{
+	width: 100%;
+}
+
+#index-container p {
+	font-size: 1.25rem;
+}
+
+/*#project-container*/
+
+
+/*#contact-container*/
+
+
+#contact-container {
+	background-image: url(./img/contact-bg.jpg);
+	min-height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#contact-container #gmap_canvas{
+	width: 100%;
+	height: 80vh;
+}
+
+#contact-container #form-button {
+	background-color: #00537B ;
+}
+
+@media(max-width:568px){
+    #index-container, #contact-container{
+        background-attachment:scroll;
+    }
+}
