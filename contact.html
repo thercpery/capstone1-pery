@@ -30,44 +30,46 @@
 			<ul class="navbar-nav mr-2">
 				<li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
 				<li class="nav-item"><a href="./projects.html" class="nav-link">Projects</a></li>
-				<li class="nav-item"><a href="./tools.html" class="nav-link">Tools</a></li>
 				<li class="nav-item active"><a href="./contact.html" class="nav-link">Contact</a></li>
 			</ul>
-		</div>
+		</div> <!-- ./div.collapse.navbar-collapse -->
 	</nav> <!-- ./nav.navbar.navbar-expand-lg... -->
 
 	<!-- main container -->
-	<main class="container-fluid text-center text-white" id="contact-container">
-		<h1 class="py-3 animate__animated animate__flipInX">Contact Me</h1>
-		<div class="row">
-			<section class="col-md-6" id="map">
-				<div class="container py-3">
-					<h2 class="mb-3 animate__animated animate__flipInX">Find Me</h2>
-					<iframe id="gmap_canvas" class="animate__animated animate__lightSpeedInRight" src="https://maps.google.com/maps?q=Mangga%20Street%20Pasig&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-				</div>
-			</section>
-			<section class="col-md-6" id="form">
-				<div class="container py-3">
-					<h2 class="mb-3 animate__animated animate__flipInX">Message Me</h2>
-					<form class="animate__animated animate__lightSpeedInLeft">
-						<div class="form-group">
-							<label for="name">Name:</label>
-							<input type="text" name="name" id="name" placeholder="Enter your name" class="form-control">
-						</div>
-						<div class="form-group">
-							<label for="name">Email:</label>
-							<input type="text" name="name" id="name" placeholder="Enter your name" class="form-control">
-						</div>
-						<div class="form-group">
-							<label for="name">Message:</label>
-							<textarea placeholder="What do you want to build?" class="form-control"></textarea>
-						</div>
-							<button class="btn btn-block rounded-pill text-white" id="form-button">Submit</button>
-					</form>
-				</div> <!-- ./div.container.py-3 -->
-			</section> <!-- ./section.col-md-6#form -->
-		</div> <!-- ./div.row.mb-2 -->
+	<main class="container-fluid text-center text-white py-5" id="contact-container">
+		<div class="container">
+			<h1 class="py-2 animate__animated animate__flipInX">Contact Me</h1>
+			<div class="row">
+				<section class="col-md-6 order-2" id="map">
+					<div class="container py-3">
+						<h2 class="mb-3 animate__animated animate__flipInX">Find Me</h2>
+						<iframe id="gmap_canvas" class="animate__animated animate__lightSpeedInLeft" src="https://maps.google.com/maps?q=Mangga%20Street%20Pasig&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+					</div>
+				</section>
+				<section class="col-md-6 order-1" id="form">
+					<div class="container py-3">
+						<h2 class="mb-3 animate__animated animate__flipInX">Message Me</h2>
+						<form class="animate__animated animate__lightSpeedInRight">
+							<div class="form-group">
+								<label for="name">Name:</label>
+								<input type="text" name="name" id="name" placeholder="Enter your name" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="email">Email:</label>
+								<input type="email" name="email" id="email" placeholder="email@something.com" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="name">Message:</label>
+								<textarea placeholder="What do you want me to build?" rows="5" class="form-control"></textarea>
+							</div>
+								<button class="btn btn-block rounded-pill text-white" id="form-button">Submit</button>
+						</form>
+					</div> <!-- ./div.container.py-3 -->
+				</section> <!-- ./section.col-md-6#form -->
+			</div> <!-- ./div.row.mb-2 -->
+		</div> <!-- ./div.container... -->
 	</main> <!-- ./main.container-fluid -->
+
 	<footer class="text-center text-white p-3">
 		<p>Roy Christian Pery</p>
 		<p>&copy; 2021 All Rights Reserved.</p>
@@ -77,8 +79,8 @@
 			<a href="https://gitlab.com/thercpery" target="_blank" class="mx-2"><i class="fab fa-gitlab"></i></a>
 			<a href="https://github.com/thercpery" target="_blank" class="mx-2"><i class="fab fa-github"></i></i></a>
 			<a href="https://www.linkedin.com/in/roy-christian-p-b47294201/" target="_blank" class="mx-2"><i class="fab fa-linkedin"></i></a>
-		</div>
-	</footer>
+		</div> <!-- ./div.d-flex.justify-content-center... -->
+	</footer> <!-- ./footer.text-center.text-white... -->
 
 	<!-- Javascript -->
 	<!-- Bootstrap -->
